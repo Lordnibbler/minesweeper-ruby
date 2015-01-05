@@ -1,10 +1,12 @@
 class Tile
-  attr_accessor :mine, :revealed, :flagged
+  attr_accessor :x, :y, :mine, :revealed, :flagged
 
   #
   #
   #
-  def initialize(mine = false)
+  def initialize(x, y, mine = false)
+    @x        = x
+    @y        = y
     @mine     = mine
     @revealed = false
     @flagged  = false
